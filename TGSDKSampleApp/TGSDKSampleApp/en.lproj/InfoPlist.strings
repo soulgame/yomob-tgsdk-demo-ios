@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  TGSDKSampleApp
+
+  Created by 徐恺 on 2016/11/17.
+  Copyright © 2016年 soulgame. All rights reserved.
+*/
+
+CFBundleDisplayName = "TGSDKSampleApp";

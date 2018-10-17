@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  TGSDKSampleApp
+
+  Created by 徐恺 on 2016/11/17.
+  Copyright © 2016年 soulgame. All rights reserved.
+*/
+
+"TGSDK init finished" = "TGSDK加载完毕";
+"Preload Ad" = "预加载广告";
+"Load Ad only in WiFi environment？" = "需要只在 WiFi 环境才加载广告吗？";
+"Only in WiFi" = "只在 WiFi 时";
+"Nevermind" = "无所谓";
+"Show Ad" = "播放广告";
+"Ready to show Ad:" = "确定要播放广告：";
+"CP Ad" = "CP 广告";
+"Manual or Auto play？" = "手动播放还是自动播放？";
+"Auto play" = "自动播放";
+"Manual play" = "手动播放";

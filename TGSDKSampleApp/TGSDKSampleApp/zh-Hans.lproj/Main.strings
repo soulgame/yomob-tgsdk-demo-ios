@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Click PreloadAd Please"; ObjectID = "Ngf-bo-b4P"; */
+"Ngf-bo-b4P.normalTitle" = "请进行预播放";
+
+/* Class = "UILabel"; text = "AD Scene ："; ObjectID = "cHr-oQ-o8G"; */
+"cHr-oQ-o8G.text" = "广告场景：";
+
+/* Class = "UIButton"; normalTitle = "ShowAd"; ObjectID = "oBA-Si-Z4h"; */
+"oBA-Si-Z4h.normalTitle" = "播放广告";
