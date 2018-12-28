@@ -10,12 +10,14 @@
 #import "TGSDK/TGSDK.h"
 
 @interface ViewController () <UIPickerViewDelegate, UIPickerViewDataSource,
-    TGPreloadADDelegate, TGADDelegate, TGRewardVideoADDelegate, TGBannerADDelegate>
+    TGPreloadADDelegate, TGADDelegate, TGRewardVideoADDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *adScene;
 @property (weak, nonatomic) IBOutlet UIButton *showTestViewButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *scenePicker;
 @property (weak, nonatomic) IBOutlet UIButton *closeBannerButton;
+@property (weak, nonatomic) IBOutlet UITextView *callbackView;
+
 @property (nonatomic, strong) NSArray * sceneArray;
 @property (nonatomic, strong) NSString * sceneID;
 @property (strong, nonatomic) NSMutableDictionary *sceneMap;
@@ -50,7 +52,6 @@
     
     [TGSDK setRewardVideoADDelegate:self];
     [TGSDK setADDelegate:self];
-    [TGSDK setBannerDelegate:self];
     [TGSDK preloadAd:self];
 }
 
@@ -67,7 +68,7 @@
         if ([TGSDK couldShowAd:_sceneID]) {
             UIAlertController* alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Show Ad", @"") message:[NSString stringWithFormat:@"%@%@？", NSLocalizedString(@"Ready to show Ad:", @""), _sceneID] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* yesAction = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                
+                _callbackView.text = @"";
                 [TGSDK showAd:_sceneID];
 
             }];
@@ -92,6 +93,7 @@
 }
 - (IBAction)showTestView:(id)sender {
     if (_sceneID != nil) {
+        _callbackView.text = @"";
         [TGSDK showTestView:_sceneID];
     } else {
         [self showAlert:@"Select a Scene ID Please" message:@"Select a Scene ID Please"];
@@ -167,79 +169,41 @@
     }
 }
 
-- (void) onPreloadFailed:(NSString*)result WithError:(NSString*) error
-{
-    [self showAlert:@"onPreloadFailed" message:result];
+- (void) onPreloadFailed:(NSString*)result WithError:(NSString*) error {
+    [self showAlert:@"onPreloadFailed" message:@"onPreloadFailed"];
 }
 
-- (void) onCPADLoaded:(NSString *)result
-{
-    [self showLog:@"onCPADLoaded" message:result];
+- (void) onAwardVideoLoaded:(NSString* _Nonnull) result {
+    [self showLog:@"onAwardVideoLoaded" message:result];
 }
 
-- (void) onVideoADLoaded:(NSString *)result
-{
-    [self showLog:@"onVedioADLoaded" message:result];
+- (void) onInterstitialLoaded:(NSString* _Nonnull) result {
+    [self showLog:@"onInterstitialLoaded" message:result];
 }
 
-    
-
-// ------------------------ TGADDelegate ------------------------
-- (void) onShowSuccess:(NSString*)result
-{
-    [self showLog:@"onShowSuccess" message:result];
+- (void) onInterstitialVideoLoaded:(NSString* _Nonnull) result {
+    [self showLog:@"onInterstitialVideoLoaded" message:result];
 }
 
-- (void) onShowFailed:(NSString*)result WithError:(NSString*) error
-{
-    [self showAlert:@"onShowFailed" message:result];
+- (void) onShow:(NSString* _Nonnull)scene Success:(NSString* _Nonnull)result {
+    [self showLog:[NSString stringWithFormat:@"onShowSuccess : %@", scene] message:result];
+    _callbackView.text = [NSString stringWithFormat:@"%@ShowSuccess : %@\n", _callbackView.text, result];
 }
 
-- (void) onADComplete:(NSString*)result {
-    [self showLog:@"onADComplete" message:result];
+- (void) onShow:(NSString* _Nonnull)scene Failed:(NSString* _Nonnull)result Error:(NSError* _Nullable)error {
+    [self showLog:[NSString stringWithFormat:@"onShowFailed : %@", scene] message:result];
+    _callbackView.text = [NSString stringWithFormat:@"%@ShowFailed : %@\n", _callbackView.text, result];
 }
 
-- (void) onADClick:(NSString*)result
-{
-    [self showLog:@"onADClick" message:result];
+- (void) onAD:(NSString* _Nonnull)scene Click:(NSString* _Nonnull)result {
+    [self showLog:[NSString stringWithFormat:@"onADClick : %@", scene] message:result];
+    _callbackView.text = [NSString stringWithFormat:@"%@ADClick : %@\n", _callbackView.text, result];
 }
 
-- (void) onADClose:(NSString*)result
-{
-    [TGSDK showAdScene:_sceneID];
-    [self showLog:@"onADClose" message:result];
-}
-
-    
-// ------------------------ TGRewardVideoADDelegate ------------------------
-- (void) onADAwardSuccess:(NSString*)result
-{
-    [self showAlert:@"onADAwardSuccess" message:result];
-}
-
-- (void) onADAwardFailed:(NSString*)result WithError:(NSError *)error
-{
-    [self showAlert:@"onADAwardFailed" message:result];
-}
-
-    
-// ------------------------ TGBannerADDelegate ------------------------
-- (void) onBanner:(NSString* _Nonnull)scene Loaded:(NSString* _Nonnull)result {
-    [self showLog:[NSString stringWithFormat:@"onBanner: %@ Loaded", scene] message:scene];
-    
-}
-    
-- (void) onBanner:(NSString* _Nonnull)scene Failed:(NSString* _Nonnull)result WithError:(NSError* _Nullable)error {
-    [self showAlert:[NSString stringWithFormat:@"onBanner: %@ Failed", scene]
-            message:[NSString stringWithFormat: @"You could call [TGSDK closeBanner:@\"%@\"]; to close banner and retry to show banner AD again", scene]];
-}
-    
-- (void) onBanner:(NSString* _Nonnull)scene Click:(NSString* _Nonnull)result {
-    [self showLog:[NSString stringWithFormat:@"onBanner: %@ Click", scene] message:scene];
-}
-    
-- (void) onBanner:(NSString* _Nonnull)scene Close:(NSString* _Nonnull)result {
-    [self showLog:[NSString stringWithFormat:@"onBanner: %@ Close", scene] message:result];
+- (void) onAD:(NSString* _Nonnull)scene Close:(NSString* _Nonnull)result Award:(BOOL)award {
+    [self showAlert:[NSString stringWithFormat:@"onADClose : %@", scene] message:[NSString stringWithFormat:@"%@ - Award : %@", result, award?@"True":@"False"]];
+    _callbackView.text = [NSString stringWithFormat:@"%@ADClose : %@\n", _callbackView.text, result];
+    _callbackView.text = [NSString stringWithFormat:@"%@ADAward : %@\n", _callbackView.text, award?@"True":@"False"];
 }
 
 @end

@@ -31,16 +31,11 @@
 		2BB14A86215F837900447303 /* MTGSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB14A82215F837800447303 /* MTGSDK.framework */; };
 		2BB14A87215F837900447303 /* MTGSDKInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB14A83215F837800447303 /* MTGSDKInterstitial.framework */; };
 		2BB14A88215F837900447303 /* MTGSDKInterstitialVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB14A84215F837900447303 /* MTGSDKInterstitialVideo.framework */; };
-		2BB14A8D215F83C500447303 /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB14A8B215F83C500447303 /* ZZAdSDK.framework */; };
-		2BB14A8E215F83C500447303 /* ZZDWKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB14A8C215F83C500447303 /* ZZDWKit.framework */; };
 		2BB14A91215F83EC00447303 /* baidumobadsdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BB14A8F215F83EC00447303 /* baidumobadsdk.bundle */; };
 		2BB558C121196C90006998E5 /* CHAMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB558C021196C90006998E5 /* CHAMoatMobileAppKit.framework */; };
-		2BB558C721196CE1006998E5 /* PlayableAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB558C621196CE1006998E5 /* PlayableAds.framework */; };
-		2BB558CC21196D32006998E5 /* WindSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB558C921196CFC006998E5 /* WindSDK.framework */; };
 		2BB558CD21196D32006998E5 /* WMAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB558C821196CFC006998E5 /* WMAdSDK.framework */; };
 		2BB558CF21196D3C006998E5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB558CE21196D3C006998E5 /* CoreVideo.framework */; };
 		2BB558D321196D6C006998E5 /* WMAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BB558D221196D6C006998E5 /* WMAdSDK.bundle */; };
-		2BB558D521196D73006998E5 /* ZplayMuteListener.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BB558D421196D73006998E5 /* ZplayMuteListener.bundle */; };
 		2BC85E861F05EF5D00D8A524 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC85E851F05EF5D00D8A524 /* FBAudienceNetwork.framework */; };
 		2BC85E881F05EFAA00D8A524 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC85E871F05EFAA00D8A524 /* AdColony.framework */; };
 		2BE89000200C91790096B905 /* GDTMobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE88FFF200C91790096B905 /* GDTMobSDK.framework */; };
@@ -49,7 +44,6 @@
 		3D037A4D1E0CBFDE00E1E091 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A321E0CBFDE00E1E091 /* FMDB.framework */; };
 		3D037A511E0CBFDE00E1E091 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A361E0CBFDE00E1E091 /* UnityAds.framework */; };
 		3D037A521E0CBFDE00E1E091 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A371E0CBFDE00E1E091 /* VungleSDK.framework */; };
-		3D037A561E0CBFDE00E1E091 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D037A3F1E0CBFDE00E1E091 /* UnityAds.bundle */; };
 		3D037A5E1E0CBFFE00E1E091 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A5D1E0CBFFE00E1E091 /* libc++.tbd */; };
 		3D037A601E0CC02D00E1E091 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A5F1E0CC02D00E1E091 /* libsqlite3.tbd */; };
 		3D037A621E0CC03600E1E091 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A611E0CC03600E1E091 /* libxml2.tbd */; };
@@ -105,16 +99,11 @@
 		2BB14A82215F837800447303 /* MTGSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MTGSDK.framework; sourceTree = "<group>"; };
 		2BB14A83215F837800447303 /* MTGSDKInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MTGSDKInterstitial.framework; sourceTree = "<group>"; };
 		2BB14A84215F837900447303 /* MTGSDKInterstitialVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MTGSDKInterstitialVideo.framework; sourceTree = "<group>"; };
-		2BB14A8B215F83C500447303 /* ZZAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZAdSDK.framework; sourceTree = "<group>"; };
-		2BB14A8C215F83C500447303 /* ZZDWKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZDWKit.framework; sourceTree = "<group>"; };
 		2BB14A8F215F83EC00447303 /* baidumobadsdk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = baidumobadsdk.bundle; sourceTree = "<group>"; };
 		2BB558C021196C90006998E5 /* CHAMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CHAMoatMobileAppKit.framework; sourceTree = "<group>"; };
-		2BB558C621196CE1006998E5 /* PlayableAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlayableAds.framework; sourceTree = "<group>"; };
 		2BB558C821196CFC006998E5 /* WMAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WMAdSDK.framework; sourceTree = "<group>"; };
-		2BB558C921196CFC006998E5 /* WindSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindSDK.framework; sourceTree = "<group>"; };
 		2BB558CE21196D3C006998E5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		2BB558D221196D6C006998E5 /* WMAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMAdSDK.bundle; sourceTree = "<group>"; };
-		2BB558D421196D73006998E5 /* ZplayMuteListener.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZplayMuteListener.bundle; sourceTree = "<group>"; };
 		2BC85E851F05EF5D00D8A524 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		2BC85E871F05EFAA00D8A524 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
 		2BE88FFF200C91790096B905 /* GDTMobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GDTMobSDK.framework; sourceTree = "<group>"; };
@@ -124,7 +113,6 @@
 		3D037A361E0CBFDE00E1E091 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		3D037A371E0CBFDE00E1E091 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		3D037A3A1E0CBFDE00E1E091 /* TGSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSDK.h; sourceTree = "<group>"; };
-		3D037A3F1E0CBFDE00E1E091 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
 		3D037A5D1E0CBFFE00E1E091 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		3D037A5F1E0CC02D00E1E091 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3D037A611E0CC03600E1E091 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
@@ -163,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB558CF21196D3C006998E5 /* CoreVideo.framework in Frameworks */,
-				2BB558CC21196D32006998E5 /* WindSDK.framework in Frameworks */,
 				2BB558CD21196D32006998E5 /* WMAdSDK.framework in Frameworks */,
 				3D799D65206A0D85000A02F4 /* WatchConnectivity.framework in Frameworks */,
 				2BB558C121196C90006998E5 /* CHAMoatMobileAppKit.framework in Frameworks */,
@@ -184,7 +171,6 @@
 				3D037A781E0CC08C00E1E091 /* MessageUI.framework in Frameworks */,
 				3D037A761E0CC08500E1E091 /* MediaPlayer.framework in Frameworks */,
 				2BB14A85215F837900447303 /* MTGSDKReward.framework in Frameworks */,
-				2BB558C721196CE1006998E5 /* PlayableAds.framework in Frameworks */,
 				3D037A741E0CC07E00E1E091 /* iAd.framework in Frameworks */,
 				3D037A721E0CC07600E1E091 /* EventKit.framework in Frameworks */,
 				2B6C6F831EBB3505001BA1AD /* AppnextSDKCore.framework in Frameworks */,
@@ -193,11 +179,9 @@
 				3D037A6C1E0CC05F00E1E091 /* CoreGraphics.framework in Frameworks */,
 				3D037A6A1E0CC05700E1E091 /* AVFoundation.framework in Frameworks */,
 				3D037A681E0CC04F00E1E091 /* AudioToolbox.framework in Frameworks */,
-				2BB14A8E215F83C500447303 /* ZZDWKit.framework in Frameworks */,
 				2BC85E881F05EFAA00D8A524 /* AdColony.framework in Frameworks */,
 				3D037A661E0CC04600E1E091 /* Accelerate.framework in Frameworks */,
 				3D037A641E0CC03E00E1E091 /* libz.tbd in Frameworks */,
-				2BB14A8D215F83C500447303 /* ZZAdSDK.framework in Frameworks */,
 				3D037A621E0CC03600E1E091 /* libxml2.tbd in Frameworks */,
 				3D037A601E0CC02D00E1E091 /* libsqlite3.tbd in Frameworks */,
 				2BB14A80215F836000447303 /* InMobi.framework in Frameworks */,
@@ -281,7 +265,6 @@
 				3D037A321E0CBFDE00E1E091 /* FMDB.framework */,
 				2BC85E851F05EF5D00D8A524 /* FBAudienceNetwork.framework */,
 				2BE88FFF200C91790096B905 /* GDTMobSDK.framework */,
-				2BB558C621196CE1006998E5 /* PlayableAds.framework */,
 				3D037A361E0CBFDE00E1E091 /* UnityAds.framework */,
 				3D037A371E0CBFDE00E1E091 /* VungleSDK.framework */,
 				2BB14A7F215F836000447303 /* InMobi.framework */,
@@ -290,10 +273,7 @@
 				2BB14A83215F837800447303 /* MTGSDKInterstitial.framework */,
 				2BB14A84215F837900447303 /* MTGSDKInterstitialVideo.framework */,
 				2BB14A81215F837800447303 /* MTGSDKReward.framework */,
-				2BB558C921196CFC006998E5 /* WindSDK.framework */,
 				2BB558C821196CFC006998E5 /* WMAdSDK.framework */,
-				2BB14A8B215F83C500447303 /* ZZAdSDK.framework */,
-				2BB14A8C215F83C500447303 /* ZZDWKit.framework */,
 			);
 			name = frameworks;
 			path = TGSDKSampleApp/TGSDK/frameworks;
@@ -320,13 +300,11 @@
 			isa = PBXGroup;
 			children = (
 				2BB14A8F215F83EC00447303 /* baidumobadsdk.bundle */,
-				2BB558D421196D73006998E5 /* ZplayMuteListener.bundle */,
 				2BB558D221196D6C006998E5 /* WMAdSDK.bundle */,
 				2B97CE701EF140DE00E51C41 /* TGADSDK.bundle */,
 				2B6C6F871EBB3538001BA1AD /* TapjoyResources.bundle */,
 				2B6C6F881EBB3538001BA1AD /* TGStartedIcon.png */,
 				2B6C6F891EBB3538001BA1AD /* TGUnstartedIcon.png */,
-				3D037A3F1E0CBFDE00E1E091 /* UnityAds.bundle */,
 			);
 			name = resources;
 			path = TGSDKSampleApp/TGSDK/resources;
@@ -423,10 +401,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D037A561E0CBFDE00E1E091 /* UnityAds.bundle in Resources */,
 				2BB558D321196D6C006998E5 /* WMAdSDK.bundle in Resources */,
 				2BB14A91215F83EC00447303 /* baidumobadsdk.bundle in Resources */,
-				2BB558D521196D73006998E5 /* ZplayMuteListener.bundle in Resources */,
 				3DFDFE621DDD7FBC0054DAD5 /* InfoPlist.strings in Resources */,
 				2B6C6F8C1EBB3538001BA1AD /* TGUnstartedIcon.png in Resources */,
 				2B97CE711EF140DE00E51C41 /* TGADSDK.bundle in Resources */,
