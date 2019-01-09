@@ -36,6 +36,7 @@
 		2BB558D321196D6C006998E5 /* WMAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BB558D221196D6C006998E5 /* WMAdSDK.bundle */; };
 		2BC85E861F05EF5D00D8A524 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC85E851F05EF5D00D8A524 /* FBAudienceNetwork.framework */; };
 		2BC85E881F05EFAA00D8A524 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC85E871F05EFAA00D8A524 /* AdColony.framework */; };
+		2BC923F321E5DE7B003F2D66 /* yomobads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC923F221E5DE7B003F2D66 /* yomobads.framework */; };
 		2BE89000200C91790096B905 /* GDTMobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE88FFF200C91790096B905 /* GDTMobSDK.framework */; };
 		3D037A461E0CBFDE00E1E091 /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A2B1E0CBFDE00E1E091 /* AppLovinSDK.framework */; };
 		3D037A491E0CBFDE00E1E091 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D037A2E1E0CBFDE00E1E091 /* Chartboost.framework */; };
@@ -102,6 +103,7 @@
 		2BB558D221196D6C006998E5 /* WMAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMAdSDK.bundle; sourceTree = "<group>"; };
 		2BC85E851F05EF5D00D8A524 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		2BC85E871F05EFAA00D8A524 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		2BC923F221E5DE7B003F2D66 /* yomobads.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = yomobads.framework; sourceTree = "<group>"; };
 		2BE88FFF200C91790096B905 /* GDTMobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GDTMobSDK.framework; sourceTree = "<group>"; };
 		3D037A2B1E0CBFDE00E1E091 /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLovinSDK.framework; sourceTree = "<group>"; };
 		3D037A2E1E0CBFDE00E1E091 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			files = (
 				2BB558CF21196D3C006998E5 /* CoreVideo.framework in Frameworks */,
 				2BB558CD21196D32006998E5 /* WMAdSDK.framework in Frameworks */,
+				2BC923F321E5DE7B003F2D66 /* yomobads.framework in Frameworks */,
 				3D799D65206A0D85000A02F4 /* WatchConnectivity.framework in Frameworks */,
 				2BB558C121196C90006998E5 /* CHAMoatMobileAppKit.framework in Frameworks */,
 				3D799D63206A0D76000A02F4 /* JavaScriptCore.framework in Frameworks */,
@@ -266,6 +269,7 @@
 				2BB14A84215F837900447303 /* MTGSDKInterstitialVideo.framework */,
 				2BB14A81215F837800447303 /* MTGSDKReward.framework */,
 				2BB558C821196CFC006998E5 /* WMAdSDK.framework */,
+				2BC923F221E5DE7B003F2D66 /* yomobads.framework */,
 			);
 			name = frameworks;
 			path = TGSDKSampleApp/TGSDK/frameworks;
