@@ -10,7 +10,7 @@
 #import "TGSDK/TGSDK.h"
 
 @interface ViewController () <UIPickerViewDelegate, UIPickerViewDataSource,
-    TGPreloadADDelegate, TGADDelegate, TGRewardVideoADDelegate>
+    TGPreloadADDelegate, TGADDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *adScene;
 @property (weak, nonatomic) IBOutlet UIButton *showTestViewButton;
@@ -50,7 +50,6 @@
                    x:0 y:self.view.frame.size.height-330
                width:self.view.frame.size.width height:90 Interval:30];
     
-    [TGSDK setRewardVideoADDelegate:self];
     [TGSDK setADDelegate:self];
     [TGSDK preloadAd:self];
 }
